@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+
+  <title>GameZone - Your Ultimate Game Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #f5f5f5;
+    }
+
+    /* Navbar */
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 15px 30px;
+}
+
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00d8ff;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00d8ff;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606813902730-b942d0fba4dc?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 12px;
+      font-size: 2.5rem;
+      color: #00d8ff;
+    }
+
+    /* Featured Games */
+    .section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00d8ff;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .game-card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.03);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .game-card .info {
+      padding: 15px;
+    }
+
+    .game-card .info h3 {
+      margin: 0 0 10px;
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #00d8ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #00b0cc;
+    }
+
+    /* Footer */
+    footer {
+      background: #1f1f1f;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">GameZone</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for games..." />
+    </div>
+    <div class="menu">
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <h1>Welcome to GameZone - Level Up Your Play</h1>
+  </div>
+
+  <!-- Featured Games Section -->
+  <section class="section">
+    <h2>🔥 Featured Games</h2>
+    <div class="game-grid">
+
+      <div class="game-card">
+        <img src="GoT.png" alt="Game 1">
+        <div class="info">
+          <h3>Ghost of Tsushima</h3>
+          <p>Relive the Japanese lore like it's the yesterday</p>
+          <a href="https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="ER.png" alt="Game 2">
+        <div class="info">
+          <h3>Elden Ring</h3>
+          <p>Unleash your inner dragon master in this epic RPG.</p>
+          <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="DBH.png" alt="Game 3">
+        <div class="info">
+          <h3>Detroit:Become Human</h3>
+          <p>The core theme revolves around the androids' struggle for freedom and recognition, symbolized by phrases like "We are Alive!" and "We Have A Dream"</p>
+          <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!--Racing Games-->
+
+  <section class="section">
+    <h2> 🏁Racing Games</h2>
+    <div class="game-grid">
+
+      <div class="game-card">
+        <img src="NFS.jpg" alt="Game 1">
+        <div class="info">
+          <h3>NFS:Heat</h3>
+          <p>Experience the street scene in this actio packed NFS game</p>
+          <a href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="Irace.jpg" alt="Game 2">
+        <div class="info">
+          <h3>iRacing</h3>
+          <p>The name says it all</p>
+          <a href="https://store.steampowered.com/app/266410/iRacing/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="f1.png" alt="Game 3">
+        <div class="info">
+          <h3>F1 2025</h3>
+          <p>High-speed thrills and realistic racing dynamics.</p>
+          <a href="https://store.steampowered.com/app/3059520/F1_25/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Action and Adventure-->
+
+  <section class="section">
+    <h2> ⚔️Action and Adventure </h2>
+    <div class="game-grid">
+
+      <div class="game-card">
+        <img src="gowr.jpg" alt="Game 1">
+        <div class="info">
+          <h3>God Of War:Ragnarök</h3>
+          <p>Kratos and Atreus embark on a mythic journey for answers before Ragnarök arrives</p>
+          <a href="https://store.steampowered.com/app/2322010/God_of_War_Ragnark/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="wit3.jpg" alt="Game 2">
+        <div class="info">
+          <h3>The Witcher 3: Wild Hunt</h3>
+          <p>You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.</p>
+          <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="ijgc.jpg" alt="Game 3">
+        <div class="info">
+          <h3>Indiana Jones and the great Circle</h3>
+          <p>Uncover one of history’s greatest mysteries in a first-person, single-player adventure. The year is 1937, sinister forces are scouring the globe for the secret to an ancient power connected to the Great Circle, and only one person can stop them</p>
+          <a href="https://store.steampowered.com/app/2677660/Indiana_Jones_and_the_Great_Circle/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Simulation Games-->
+
+  <section class="section">
+    <h2> 🕹️Simulation Games </h2>
+    <div class="game-grid">
+
+      <div class="game-card">
+        <img src="oh.jpg" alt="Game 1">
+        <div class="info">
+          <h3>Once Human</h3>
+          <p>Once Human is a multiplayer open-world survival game set in a strange, post-apocalyptic future. Unite with friends to fight monstrous enemies, uncover secret plots, compete for resources, and build your own territory. Once, you were merely human. Now, you have the power to remake the world.</p>
+          <a href="https://store.steampowered.com/app/2139460/Once_Human/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="ets2.jpg" alt="Game 2">
+        <div class="info">
+          <h3>Euro Truck Simulator 2</h3>
+          <p>Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits.</p>
+          <a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="sims4.jpg" alt="Game 3">
+        <div class="info">
+          <h3>The Sims 4</h3>
+          <p>Play with life and discover the possibilities. Unleash your imagination and create a world of Sims that’s wholly unique. Explore and customize every detail from Sims to homes–and much more.</p>
+          <a href="https://store.steampowered.com/app/1222670/The_Sims_4/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!--Upcoming Games-->
+
+  <section class="section">
+    <h2> Upcoming </h2>
+    <div class="game-grid">
+
+      <div class="game-card">
+        <img src="dune.jpg" alt="Game 1">
+        <div class="info">
+          <h3>DUNE:Awakening</h3>
+          <p>Rise from survival to greatness and challenge the power of an Imperium in Dune: Awakening, a multiplayer survival game on a massive scale. Survive the sandworm, craft your ornithopter, build a fortress, and ascend to power on an open world Arrakis shared with hundreds of other players.</p>
+          <a href="https://store.steampowered.com/app/1172710/Dune_Awakening/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="ERNR.jpg" alt="Game 2">
+        <div class="info">
+          <h3>ELDEN RING NIGHTREIGN</h3>
+          <p>ELDEN RING NIGHTREIGN is a standalone adventure within the ELDEN RING universe, crafted to offer players a new gaming experience by reimagining the game’s core design.</p>
+          <a href="https://store.steampowered.com/app/2622380/ELDEN_RING_NIGHTREIGN/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="sub2.jpg" alt="Game 3">
+        <div class="info">
+          <h3>SubNautica 2</h3>
+          <p>Immerse yourself in a new adventure with Subnautica 2, an open-water survival game from the creators of the Subnautica series. Play alone or with friends as you explore alluring biomes and discover fascinating creatures. Craft vehicles, tools, and bases to survive this mysterious alien world.</p>
+          <a href="https://store.steampowered.com/app/1962700/Subnautica_2/" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 GameZone. All rights reserved. | Powered by Gamers for Gamers.
+  </footer>
+
+</body>
+</html>
